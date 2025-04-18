@@ -1,0 +1,331 @@
+/* @import "tailwindcss"; */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* 
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}  */
+
+
+body {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  scroll-behavior: smooth; */
+  /* height: 100%; */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App-Container {
+  margin: 5px;
+}
+
+.App-Home {
+  text-align: center;
+  background-color: #eeeeee;
+  margin: 0px;
+}
+
+.App-Home-Row {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.App-Home-Row .box {
+  padding: 0px;
+  margin: 0px;
+  width: 610px;
+  background-color: white;
+  border-radius: 20px;
+  color: darkblue;
+}
+
+
+.App-Home-Row .btn {
+  background-color: teal;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: larger;
+}
+
+.App-Home-Row .lnkBtn {
+  border-radius: 5px;
+  margin: 2px
+}
+
+@media screen and (min-width: 700px) {
+  .App-Home-Row .clientImg {
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .App-Home-Row .clientImg {
+    width: 100px;
+    height: 50px;
+    margin: 1px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
+
+.App-Home .section {
+  background-color: white;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: darkblue
+}
+
+.App-Home-Row .course {
+  background-color: white;
+  padding: 30px;
+  margin: 30px;
+  width: 250px;
+  border-radius: 20px;
+  color: darkblue
+}
+
+.App-Home-Row .count {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  border-radius: 20px;
+  color: darkblue
+}
+
+.App-Home-Row .review {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+  border-radius: 20px;
+  border: 1px darkblue solid;
+}
+
+
+.image {
+  background-size: contain;
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.gallery {
+  width: 350px;
+  padding: 10px;
+  margin: 5px;
+  color: darkblue
+}
+
+.App-Faq {
+  font-size: 16px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 5px;
+
+}
+
+.App-Faq Summary,
+details {
+  text-align: start;
+  margin: 5px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .App-Home-Title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .App-Home-Title {
+    font-size: 25px;
+  }
+}
+
+
+.App-Header {
+  /* background-color: #9DBCF7; */
+  background-color: navy;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  padding: 5px;
+}
+
+.App-Header .box {
+  padding: 10px;
+}
+
+.App-Header li {
+  display: inline;
+  padding: 5px;
+  font-size: larger;
+}
+
+.App-Header a {
+  text-decoration: none;
+  /* color: darkblue */
+  color: silver;
+  ;
+}
+
+.App-Header a:hover {
+  text-decoration: underline;
+}
+
+.App-Header .title {
+  /* color:darkblue; */
+  font-size: 20px;
+  color: silver;
+}
+
+.App-Footer {
+  padding: 20px;
+  margin: 0px;
+  background-color: #9DBCF7;
+  color: navy;
+  font-size: large;
+  text-align: center;
+
+}
+
+.App-Login-Row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* margin: 30px;
+    padding: 70px; */
+  color: darkblue;
+  height: 90%;
+}
+
+.App-Login-Row-Box-Left {
+  /* border: 1px gray solid; */
+  /* margin: 1px; */
+  /* padding: 5px; */
+  width: 300px;
+}
+
+.App-Login-Row-Box-Right {
+  /* border: 1px gray solid; */
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+
+.App-Login-Form-Control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 20px;
+  color: darkblue;
+  border: none
+}
+
+.App-Login-Form-Button {
+  background-color: darkblue;
+  color: white;
+}
+
+.App-Course-Container {
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.App-Course-Box {
+  border: 1px gray solid;
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.App-Course-List {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.App-Course-Nav-Button {
+  font-size: 15px;
+  margin-right: 5px;
+  background-color: white;
+  border: none;
+}
