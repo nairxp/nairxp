@@ -8,7 +8,11 @@ export default function SignOut() {
   useEffect(() => {
     fetch(url);
     router.push("/");
-    router.refresh()
+    router.refresh();
   }, []);
-  return <div>SignOut</div>;
+  return (
+    <div>
+      <h3>Signing out...</h3>
+    </div>
+  );
 }
