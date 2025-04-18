@@ -17,6 +17,6 @@ export default async function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/courses/:path*", "/admin/:path*"],
+  matcher: ["/","/courses/:path*", "/admin/:path*"],
   // matcher: ['/auth/login/:path*', '/profile/:path*'],
 };
