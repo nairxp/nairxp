@@ -25,7 +25,7 @@ export default async function Header() {
         </Link>}
         {name ? (
           <>
-            {/* <Link href="/courses/"><li>Courses</li></Link> */}
+            <Link href="/courses/"><li>Courses</li></Link>
             <Link href="/auth/signout"><li>Logout</li></Link>
           </>
         ) : (

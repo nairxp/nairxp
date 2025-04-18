@@ -12,7 +12,7 @@ export default function SignOut() {
   }, []);
   return (
     <div>
-      <h3>Signing out...</h3>
+      <h2>Signing out...</h2>
     </div>
   );
 }
